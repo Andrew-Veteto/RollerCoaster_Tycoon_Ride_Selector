@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rct Rides Form</title>
+</head>
+
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formField {
+        display: flex;
+        width: 50%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    input,
+    textarea[type=text] {
+        width: 70%;
+    }
+</style>
+
+<body>
+    <h1>
+        <%= title%>
+    </h1>
+    <hr>
+
+    <br>
+
+    <h3>For Available Vehicles and PreBuilt Rides seperate each entry by a comma</h3>
+    <h4>Please make it so it entry,entry</h4>
+    <p style="font-size: larger;">Example: Wooden Wild Mine Train,Wooden Wild Mouse<span></span></p>
+
+    <br>
+    <br>
+
+    <div class="wrapper">
+        <div class="formField">
+            <form class="form" style="width: 100%;" method="post" action="/" name="Ride form">
+                Name: <input type="text" name="name" id="name"><br>
+                Description: <textarea type="text" name="description" id="description"></textarea><br>
+                Available Vehicles: <input type="text" name="availableVehicles" id="availableVehicles"><br>
+                PreBuilds: <input type="text" name="prebuilds" id="prebuilds"><br>
+                Category:<select name="category" id="category">
+                    <option value="Transport">Transport</option>
+                    <option value="Gentle">Gentle</option>
+                    <option value="RollerCoaster">Roller Coaster</option>
+                    <option value="Thrill">Thrill</option>
+                    <option value="Water">Water</option>
+                    <option value="Shop_Stall">Shop or Stall</option>
+                </select><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
