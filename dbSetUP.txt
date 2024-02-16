@@ -1,0 +1,24 @@
+1. Attractions
+    -Attraction_Type //Like a B&M dive coaster
+    -Description
+    -Ride_Vehicles
+    -Category_of_Attraction //Gental,Thrill, etc.
+    -Image??
+2. Prebuilds
+    -Name_of_Ride
+    -Attraction_Type //Use this to get the Attractions data
+    -Excitement_Rating
+    -Intensity_Rating
+    -Nasusea_Rating
+    -Space_Required
+    -Max_Speed
+    -Average_Speed
+    -Ride_length
+    -Max_Positive_G
+    -Max_Negative_G
+    -Max_Lateral_G
+    -Total_Air_Time
+    -Drops
+    -Highest_Drop_Height
+    -Inversions
+    -Image??
